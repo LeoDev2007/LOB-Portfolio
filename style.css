@@ -1,0 +1,476 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+.center{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+    max-width: 1480px;
+    
+}
+
+
+header{
+   padding: 10px;
+   height: 90px;
+   background-color: white;
+}
+
+.logo{
+    width: 50%;
+    
+}
+
+.logo img{
+    height: 120px;
+    margin-top: -20px;
+    margin-left: 10px;
+     
+}
+
+.menu-mobile{
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background-color: #00BF63;
+    text-align: left;
+    opacity: 0;
+    display: none;
+}
+
+.show{
+    transition: 0.5s;
+    opacity: 1;
+    height: 230px;
+}
+
+.hide{transition:0.5s;height: 0;}
+
+.menu-mobile a{
+    display: inline-block;
+    padding: 5px 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 23px;
+    margin-left: 25px;
+    font-family:'Jost';
+    background-color:cornsilk;
+    margin-top: 10px;
+    border-radius: 18px;
+    
+    
+}
+
+.menu-mobile a:hover{
+    text-decoration: underline;
+    color: #00BF63;
+}
+
+.icon-menu{
+    width: 50%;
+    text-align: right;
+    color: #00BF63;
+    font-size: 35px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-desktop{
+    width: 40%;
+    display: flex;
+}
+
+.menu-desktop a{
+    
+    padding: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    margin-left: 40px;
+    margin-top: 10px;
+    font-family:'Jost';
+    background-color:#00BF63;
+    height: 40px;
+    border-radius: 18px;
+}
+section.main{
+    background-image: url('img/FB2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 700px;
+    background-attachment: fixed;
+}
+
+.presents{
+   
+    margin: 60px 0;
+    text-align: center;
+    font-family: 'Jost';
+}
+
+.presents h1{
+    font-size: 50px;
+    color: #00BF63;
+}
+
+.presents p{
+    font-size: 20px;
+    color: #00BF63;
+    margin-top: 10px;
+}
+
+.presents img{
+    height: 300px;
+    margin-top: 50px;
+}
+
+.button{
+    text-align: center;
+    margin-top: 100px;
+    
+}
+
+.button a{
+    background-color: #00BF63;
+    color: white;
+    padding: 0 10px;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 13px;
+}
+
+section.sobre{
+    background-image: url(img/FB1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 700px;
+    background-attachment: fixed;
+}
+
+.Sobre2{
+    width: 100%;
+    margin: 60px 0;
+    font-family: 'Jost';
+    text-align: left;
+}
+
+.Sobre2 h2{
+    font-size: 60px;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 20px;
+    color: #00BF63;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+}
+
+.Sobre2 p{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 50%;
+    
+}
+
+section.hab{
+    min-height:50px;
+    background-color: #ccc;
+}
+
+.Skills{
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.Skills h2{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    color: #00BF63;
+}
+
+.Skills h3{
+    display: inline-block;
+    margin: 0 20px;
+    margin-top: 10px;
+    font-family: 'Jost';
+    background-color: rgba(153, 153, 153, .2);
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+section.Projetos{
+    background-image: url("img/FB2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    background-attachment: fixed;
+}
+
+.P{
+    width: 100%;
+    margin: 20px 0;
+    font-family: 'Jost';
+}
+.TI{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #00BF63;
+}
+
+.Pro{
+    display: inline-block;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 40px;
+    text-align: center;
+    justify-content: center;
+    background-color: #ccc;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.Pro img{
+    height: 250px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+  
+}
+
+.Pro h2{
+    font-size: 25px;
+}
+
+.Pro p{
+    margin-top: -20px;
+}
+
+.Pro a{
+    padding: 3px 8px;
+    background-color: #00BF63;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 40px;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(img/FB2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #00BF63;
+    
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Jost';
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-family: 'Jost';
+    resize: none;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: #00BF63;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'jost';
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #00BF63;
+  }
+
+  .container{
+    background-color: #ccc;
+    font-family: 'jost';
+    text-align: center;
+    
+  }
+
+
+
+  .Social h3{
+    font-size: 28px;
+    color: #00BF63;
+
+  }
+
+  .Social i{
+    font-size: 30px;
+    color: #00BF63;
+  }
+
+  nav a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+  }
+
+  nav a:hover{
+    border-bottom: 1px solid #00BF63;
+  }
+
+  .copy h5{
+    font-size: 18px;
+  }
+
+  .copy p{
+    font-size: 18px;
+  }
+
+
+  @media screen and (max-width:768px) {
+    .menu-mobile{display: block;}
+    .menu-desktop{display: none;}
+    .icon-menu{display: block;}
+
+    .presents{
+        padding: 10px;
+        
+    }
+
+    section.sobre{
+        min-height: 500px;
+    }
+
+    .Sobre2 h2{
+        font-size: 30px;
+        text-align: left;
+    }
+
+    .Sobre2 p{
+        text-align: left;
+        font-size: 20px;
+        
+    }
+
+    .Pro{
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+        margin-right: 20px;
+        padding: 10px 0;
+        margin-left: 20px;
+    }
+
+    .Pro img{
+      height: 200px;
+    }
+
+    label {
+        font-size: 15px;
+        margin-bottom: 10px;
+        font-family: 'Jost';
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 15px;
+        font-family: 'Jost';
+        resize: none;
+        margin-bottom: 10px;
+        height: 50px;
+      }
+
+      input[type="submit"] {
+        background-color: #00BF63;
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        font-family: 'jost';
+        cursor: pointer;
+        height: 50px;
+        width: 50%;
+        margin-left: 25%;
+      }
+
+  }
+
+  @media screen and (max-width:400px){
+    .menu-mobile{display: block;}
+    .menu-desktop{display: none;}
+    .icon-menu{display: block;}
+
+    .Pro img{
+        height: 180px;
+    }
+  }
+
+  @media screen and (min-width:768px) and (max-width:768px) {
+    .menu-mobile{display: block;}
+    .menu-desktop{display: none;}
+    .icon-menu{display: block;}
+
+    .Pro{
+        justify-content: center;
+       width: 100%;
+    }
+  }
+
+
+
+
